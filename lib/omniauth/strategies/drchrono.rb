@@ -5,6 +5,13 @@ module OmniAuth
   module Strategies
     class DrChrono < OmniAuth::Strategies::OAuth2
       option :name, "drchrono"
+      option :client_options, {
+        :site => 'https://drchrono.com',
+        :authorize_url => '/o/authorize',
+        :token_url => '/o/token'
+      }
     end
   end
 end
+
+OmniQuth.config.add_camelization 'drchrono', 'DrChrono'
