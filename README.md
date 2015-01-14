@@ -1,6 +1,6 @@
 # Omniauth::Drchrono
 
-This is a OmniAuth strategy for authenticating to drchrono. To use it, you'll need to sign up for the [drchrono api](https://www.drchrono.com/api/).
+This is an OmniAuth strategy for authenticating to drchrono. To use it, you'll need to sign up for the [drchrono api](https://www.drchrono.com/api/).
 
 ## Installation
 
