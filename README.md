@@ -1,6 +1,6 @@
 # Omniauth::Drchrono
 
-TODO: Write a gem description
+This is a OmniAuth strategy for authenticating to drchrono. To use it, you'll need to sign up for the [drchrono api](https://www.drchrono.com/api/).
 
 ## Installation
 
@@ -20,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+use OmniAuth::Builder do
+  provider :drchrono, ENV['DRCHRONO_CLIENT_ID'], ENV['DRCHRONO_CLIENT_SECRET']
+end
+```
 
 ## Contributing
 
