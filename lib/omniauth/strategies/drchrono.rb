@@ -14,4 +14,4 @@ module OmniAuth
   end
 end
 
-OmniQuth.config.add_camelization 'drchrono', 'DrChrono'
+OmniAuth.config.add_camelization 'drchrono', 'DrChrono'
