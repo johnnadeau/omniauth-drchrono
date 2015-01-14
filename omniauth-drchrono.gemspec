@@ -5,7 +5,7 @@ require 'omniauth-drchrono/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "omniauth-drchrono"
-  spec.version       = Omniauth::Drchrono::VERSION
+  spec.version       = Omniauth::DrChrono::VERSION
   spec.authors       = ["John Nadeau"]
   spec.email         = ["johnnnadeau@gmail.com"]
   spec.summary       = %q{A drchrono OAuth2 strategy for OmniAuth.}

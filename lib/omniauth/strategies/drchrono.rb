@@ -4,11 +4,12 @@ require "omniauth-oauth2"
 module OmniAuth
   module Strategies
     class DrChrono < OmniAuth::Strategies::OAuth2
+      include OmniAuth::Strategy
       option :name, "drchrono"
       option :client_options, {
-        :site => 'https://drchrono.com',
-        :authorize_url => '/o/authorize',
-        :token_url => '/o/token'
+        :site => 'https://drchrono.com/api',
+        :authorize_url => 'https://drchrono.com/o/authorize',
+        :token_url => 'https://drchrono.com/o/token'
       }
     end
   end
