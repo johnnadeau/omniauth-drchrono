@@ -1,4 +1,4 @@
-require "omniauth/drchrono/version"
+require "omniauth-drchrono/version"
 require "omniauth-oauth2"
 
 module OmniAuth
