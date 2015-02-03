@@ -15,7 +15,7 @@ module OmniAuth
       uid { raw_info['username'] }
 
       info do
-        { :doctor => doctor }
+        { :doctor => doctor, :offices => offices }
       end
 
       extra do
@@ -28,6 +28,10 @@ module OmniAuth
 
       def doctor
         @doctor ||= access_token.get(raw_info['doctor']).parsed
+      end
+
+      def offices
+        @offices ||= access_token.get('offices').parsed['results']
       end
     end
   end
