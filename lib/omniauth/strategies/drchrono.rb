@@ -27,7 +27,7 @@ module OmniAuth
       end
 
       def doctor
-        @doctor ||= access_token.get(raw_info['doctor']).parsed
+        @doctor ||= access_token.get("doctors/#{raw_info['doctor']}").parsed
       end
 
       def offices
