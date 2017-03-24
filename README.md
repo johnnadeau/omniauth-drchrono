@@ -28,6 +28,13 @@ use OmniAuth::Builder do
 end
 ```
 
+Or with [devise](https://github.com/plataformatec/devise)
+
+```ruby
+config.omniauth :drchrono, ENV["DRCHRONO_CLIENT_ID"],
+ENV["DRCHRONO_CLIENT_SECRET"]
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/johnnadeau/omniauth-drchrono/fork )
